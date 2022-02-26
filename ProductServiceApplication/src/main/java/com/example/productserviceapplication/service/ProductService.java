@@ -12,11 +12,10 @@ public class ProductService {
     @Autowired
     private ProductRepository productRepository;
 
-    public Product saveEmployee(Product product) {
+    public Product saveProduct(Product product){
         return productRepository.save(product);
     }
 
-    public Product findEmployeeById(String userId) {
-        return productRepository.findEmployeeById(userId);
-    }
-}
+    public Product findProductById(String id){
+        return productRepository.findProductById(id);
+    }}

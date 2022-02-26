@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ProductRepository extends MongoRepository<Product, String> {
-    Product findEmployeeById(String userId);
+    Product findProductById(String Id);
 }

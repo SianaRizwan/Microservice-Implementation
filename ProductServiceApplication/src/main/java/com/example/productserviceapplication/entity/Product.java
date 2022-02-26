@@ -18,7 +18,7 @@ public class Product {
     @Field
     private String name;
     @Field
-    private String designation;
+    private String description;
     @Field
-    private double salary;
+    private String price;
 }

@@ -15,12 +15,12 @@ public class ProductController {
     private ProductService productService;
 
     @PostMapping("/")
-    public Product saveEmployee(@RequestBody Product product){
-        return productService.saveEmployee(product);
+    public Product saveProduct(@RequestBody Product product){
+        return productService.saveProduct(product);
     }
 
     @GetMapping("/{id}")
-    public Product findEmployeeById(@PathVariable("id") String employeeId){
-        return productService.findEmployeeById(employeeId);
+    public Product findEmployeeById(@PathVariable("id") String id){
+        return productService.findProductById(id);
     }
 }
