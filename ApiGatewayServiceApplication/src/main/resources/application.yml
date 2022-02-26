@@ -8,7 +8,7 @@ spring:
     gateway:
       routes:
         - id: EMPLOYEE-SERVICE
-          uri: lb://EPLOYEE-SERVICE
+          uri: lb://EMPLOYEE-SERVICE
           predicates:
             - Path=/employees/**
 
